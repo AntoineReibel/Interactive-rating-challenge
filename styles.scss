@@ -1,0 +1,125 @@
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+
+$cardColor: hsl(213, 19%, 18%, 0.5);
+$orange: hsl(25, 97%, 53%);
+
+body {
+    background-color: hsl(216, 12%, 8%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.osef {
+    display: none;
+}
+
+.card {
+    height: 350px;
+    width: 350px;
+    background-color: $cardColor;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.rates {
+    display: flex;
+    justify-content: space-around;
+
+    button {
+        background-color: hsl(216, 12%, 54%, 0.15);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: hsl(217, 12%, 63%);
+        border: none;
+
+        &:focus {
+            background-color: hsl(217, 12%, 63%);
+            color: white;
+        }
+
+        &:hover {
+            transition: background-color 600ms;
+            background-color: $orange;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
+
+button {
+    background-color: $orange;
+    padding: 10px;
+    border-radius: 80px;
+    letter-spacing: 0.1rem;
+    color: white;
+
+    &:hover {
+        background-color: white;
+        transition: backgroun-color 600ms;
+        color: $orange;
+        cursor: pointer;
+    }
+}
+
+.svg {
+    background-color: hsl(216, 12%, 54%, 0.15);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url(images/icon-star.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1,
+h2 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+p {
+    line-height: 1.5;
+    color: hsl(217, 12%, 63%);
+}
+
+img {
+    height: 100px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.flexCenter {
+    text-align: center;
+    padding-bottom: 40px;
+
+}
+
+.outOf5 {
+    background-color: hsl(216, 12%, 54%, 0.15);
+    padding: 4px;
+    margin: 0 60px;
+    border-radius: 50px;
+    color: $orange;
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 375px) {
+    .card {
+        height: 400px;
+        width: 100%;
+    }
+}
