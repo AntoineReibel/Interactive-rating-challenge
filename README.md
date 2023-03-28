@@ -5,3 +5,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 ## Overview
 
 Easy challenge using sass for the first time and javascript.
+
+### Link
+
+https://antoinereibel.github.io/Interactive-rating-challenge/
